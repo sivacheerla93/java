@@ -1,6 +1,8 @@
 package mail;
 
 import java.util.Properties;
+import java.util.Scanner;
+
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
@@ -11,6 +13,13 @@ import javax.mail.internet.MimeMessage;
 
 public class SendMailSSL {
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter sender email: ");
+		String from_email = sc.next();
+		System.out.println("Enter receiver's email: ");
+		String to_email = sc.next();
+		System.out.println("Enter mail password: ");
+		String password = sc.next();
 		Properties props = new Properties();
 		props.put("mail.smtp.host", "smtp.gmail.com");
 		props.put("mail.smtp.socketFactory.port", "465");
@@ -20,14 +29,14 @@ public class SendMailSSL {
 
 		Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("username@gmail.com", "********");
+				return new PasswordAuthentication(from_email, password);
 			}
 		});
 
 		try {
 			Message message = new MimeMessage(session);
-			message.setFrom(new InternetAddress("username@gmail.com"));
-			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("username@gmail.com"));
+			message.setFrom(new InternetAddress(from_email));
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to_email));
 			message.setSubject("A mail from java program!");
 			message.setText("Hi, This is Siva Cheerla I'm sending this mail from java program..");
 
