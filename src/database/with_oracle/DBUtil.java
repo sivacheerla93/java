@@ -11,7 +11,7 @@ public class DBUtil {
 		Connection con = null;
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521", "siva1", "siva1");
+			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521", "hr", "hr");
 			PreparedStatement ps = con.prepareStatement("select * from tab");
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
