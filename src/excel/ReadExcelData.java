@@ -10,7 +10,7 @@ import jxl.read.biff.BiffException;
 
 public class ReadExcelData {
 	public static String[][] myExcelParser() throws BiffException, IOException {
-		File myExcelFile = new File("src\\excel\\Data.xls");
+		File myExcelFile = new File("Data.xls");
 		Workbook objWork = Workbook.getWorkbook(myExcelFile);
 		Sheet objSheet = objWork.getSheet(0);
 		int cols = objSheet.getColumns();
