@@ -30,5 +30,4 @@ public class DBUtil {
 		// TODO Auto-generated method stub
 		getConnection();
 	}
-
 }
