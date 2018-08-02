@@ -5,7 +5,8 @@ public class TestFinalDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		FinalDemo f = new FinalDemo();
-		f.getFinalValue(900);
+		f.getFinalAmount(1000);
+		f.getFinalValue();
 	}
 
 }

@@ -1,6 +1,7 @@
-package oops.methodoverloading;
+package oops.overloading;
 
 // method overloading is creating methods with same name and different types params
+// We can call method overloading as compile-time polymorphism also
 public class AccountInfo {
 	private int mobile;
 	private String name;

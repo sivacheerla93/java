@@ -1,4 +1,4 @@
-package oops.methodoverloading;
+package oops.overloading;
 
 public class TestAccountInfo {
 
