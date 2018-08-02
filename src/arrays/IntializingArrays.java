@@ -1,4 +1,4 @@
-package arrays;
+package src.arrays;
 
 public class IntializingArrays {
 
@@ -14,6 +14,7 @@ public class IntializingArrays {
 		int a5[][] = new int[5][5]; // two dimensional array
 		int a6[] = { 10, 20, 30 }; // intializing array
 		int a7[] = new int[] { 10, 20, 30 }; // intializing array
-		int a8[][] = { { 10, 20, 30 }, { 40, 50, 60 } }; // intializing double dimensional array
+		int a8[][] = { { 10, 20, 30 }, { 40, 50, 60 } }; // intializing double
+															// dimensional array
 	}
 }

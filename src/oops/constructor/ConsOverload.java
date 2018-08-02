@@ -5,6 +5,10 @@ public class ConsOverload {
 	private String name;
 	private int age;
 
+	/*
+	 * We should create empty constructor if needed, because whenever we create
+	 * any single constructor with params default constructor will be overridden
+	 */
 	public ConsOverload() {
 	}
 
