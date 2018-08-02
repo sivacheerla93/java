@@ -7,36 +7,36 @@ public class Account {
 	private double balance;
 
 	// constructor
-	public Account(int no, String name, double bal) {
-		acno = no;
-		customer = name;
-		balance = bal;
+	public Account(int acno, String customer, double balance) {
+		this.acno = acno;
+		this.customer = customer;
+		this.balance = balance;
 	}
 
 	// methods
 	public void print() {
-		System.out.println(acno); // compile-time polymorphism
-		System.out.println(customer);
-		System.out.println(balance);
+		System.out.println(this.acno); // compile-time polymorphism
+		System.out.println(this.customer);
+		System.out.println(this.balance);
 	}
 
 	public void deposit(double amount) {
-		balance += amount;
+		this.balance += amount;
 	}
 
 	public void withdraw(double amount) {
-		if (balance >= amount) {
-			balance -= amount;
+		if (this.balance >= amount) {
+			this.balance -= amount;
 		} else {
 			System.out.println("Insufficient balance!");
 		}
 	}
 
 	public double getBalance() {
-		return balance;
+		return this.balance;
 	}
 
 	public String getCustomer() {
-		return customer;
+		return this.customer;
 	}
 }
