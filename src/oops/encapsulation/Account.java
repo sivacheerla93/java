@@ -1,4 +1,4 @@
-package oops;
+package oops.encapsulation;
 
 public class Account {
 	// instance variables
@@ -15,7 +15,7 @@ public class Account {
 
 	// methods
 	public void print() {
-		System.out.println(acno);
+		System.out.println(acno); // compile-time polymorphism
 		System.out.println(customer);
 		System.out.println(balance);
 	}
