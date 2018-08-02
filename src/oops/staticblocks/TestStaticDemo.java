@@ -8,9 +8,9 @@ public class TestStaticDemo {
 		s1.withdraw(9000);
 		s1.withdraw(1000);
 		s1.deposit(5000);
-		System.out.println(s1.getMinBal());
-		s1.setMinBal(2000);
-		System.out.println(s1.getMinBal());
+		System.out.println(StaticDemo.getMinBal());
+		StaticDemo.setMinBal(2000);
+		System.out.println(StaticDemo.getMinBal());
 	}
 
 }
