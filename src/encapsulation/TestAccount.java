@@ -14,5 +14,11 @@ public class TestAccount {
 		Account a2 = new Account(102, "Steve", 10000);
 		a2.deposit(10000);
 		System.out.println(a2.getBalance());
+
+		// toString()
+		System.out.println(a1);
+		System.out.println(a2);
+
+		System.out.println(a1.equals(a2));
 	}
 }

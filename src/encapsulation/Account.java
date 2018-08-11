@@ -39,4 +39,19 @@ public class Account {
 	public String getCustomer() {
 		return this.customer;
 	}
+
+	// toString()
+	public String toString() {
+		return this.customer + " : " + this.acno + " : " + this.balance;
+	}
+
+	// equals()
+	public boolean equals(Object obj) {
+		if (!(obj instanceof Account)) {
+			return false;
+		}
+
+		Account other = (Account) obj;
+		return this.customer.equals(obj) && this.acno == other.acno && this.balance == other.balance;
+	}
 }
