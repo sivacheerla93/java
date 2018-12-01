@@ -40,6 +40,10 @@ public class Account {
 		return this.customer;
 	}
 
+	public int getAcno() {
+		return this.acno;
+	}
+
 	// toString()
 	public String toString() {
 		return this.customer + " : " + this.acno + " : " + this.balance;
