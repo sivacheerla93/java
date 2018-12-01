@@ -6,8 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class PSTExecuteQuery1 {
-	public static Connection getConnection() {
+public class GetEmployee {
+	public static void main(String[] args) {
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -24,11 +24,5 @@ public class PSTExecuteQuery1 {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return null;
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		getConnection();
 	}
 }

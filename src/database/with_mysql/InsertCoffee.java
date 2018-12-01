@@ -3,7 +3,7 @@ package database.with_mysql;
 import java.sql.*;
 import java.util.Scanner;
 
-public class PSTExecuteUpdate1 {
+public class InsertCoffee {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
@@ -43,7 +43,5 @@ public class PSTExecuteUpdate1 {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
-
 }
