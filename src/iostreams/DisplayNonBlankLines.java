@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class BufferedReaderDemo {
+public class DisplayNonBlankLines {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -16,9 +16,13 @@ public class BufferedReaderDemo {
 		FileReader fr = new FileReader(str);
 		BufferedReader br = new BufferedReader(fr);
 		String line = br.readLine();
+		int lineno = 1;
 		while (line != null) {
-			System.out.println(line);
+			if (line.trim().length() > 0) {
+				System.out.printf("%d:%s\n", lineno, line);
+			}
 			line = br.readLine();
+			lineno++;
 		}
 		fr.close();
 		br.close();
