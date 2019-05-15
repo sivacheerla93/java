@@ -25,9 +25,9 @@ public class BookClient {
 			}
 			title = sin.nextLine();
 			if (title.length() != 0) {
-				System.out.println("Book Title: " + title);
+				System.out.println("Book Title: " + title + "\n");
 			} else {
-				System.out.println("Invalid Book No.");
+				System.out.println("Invalid Book No." + "\n");
 			}
 		}
 
