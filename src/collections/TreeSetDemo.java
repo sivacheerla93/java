@@ -22,8 +22,6 @@ public class TreeSetDemo {
 
 			Person p = new Person(name, age);
 			persons.add(p);
-
-			s.nextLine();
 		}
 		for (Person p : persons)
 			System.out.println(p);
