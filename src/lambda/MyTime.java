@@ -21,4 +21,8 @@ public class MyTime {
 	public static int compare(MyTime t1, MyTime t2) {
 		return t1.totalSeconds() - t2.totalSeconds();
 	}
+
+	public int getHours() {
+		return this.hours;
+	}
 }
