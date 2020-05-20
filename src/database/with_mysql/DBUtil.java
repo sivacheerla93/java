@@ -13,7 +13,7 @@ public class DBUtil {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			// for mysql connector 5.1, Class is com.mysql.jdbc.Driver
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/pantry", "root", "9866850403");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/world", "root", "9866850403");
 			PreparedStatement ps = con.prepareStatement("show tables");
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
